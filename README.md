@@ -17,6 +17,6 @@ sg5204@srmist.edu.in
 
 Fintech
 
-Problem Statement: 
+Problem Statement: Navigating India's tax landscape is challenging due to complex regulations and frequent changes, leading to confusion and penalties for individuals and small businesses.
 
-India as a country has a tax disparity which 
+
