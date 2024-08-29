@@ -21,7 +21,7 @@ Problem Statement: India’s complex and frequently changing tax code creates co
 
 Individuals and organizations in India frequently face challenges while managing and paying their taxes due to the complexity of the tax device, a loss of reachable professional steering, and problems in information the numerous styles of taxes and compliance requirements. This results in delays, errors in tax submitting, and ability criminal effects. There is a need for a comprehensive, user-pleasant platform that simplifies tax management via supplying a centralized gadget for paying all sorts of taxes, offering professional assistance, monetary control gear, and up to date guidelines to make certain compliance and ease of use.
 
-Introducing Our Website: Your Solution to India's Tax Issues
+Introducing Money$parta: Your Solution to India's Tax Issues
 Our new website Money$parta is designed to simplify India's complex tax system for individuals and businesses alike. Here's what we offer:
 
 1. Easy-to-Understand Guides: Detailed resources on income tax, GST, and other taxes to help you understand your obligations.
