@@ -1,0 +1,46 @@
+.image-gallery {
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portrait-image {
+  aspect-ratio: 0.46;
+  object-fit: contain;
+  width: 100%;
+  box-shadow: 0 40px 50px rgba(0, 0, 0, 0.25);
+  flex-grow: 1;
+}
+
+.landscape-image {
+  aspect-ratio: 1.64;
+  object-fit: contain;
+  width: 100%;
+  box-shadow: 0 45px 50px rgba(0, 0, 0, 0.25);
+  align-self: stretch;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .image-gallery {
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .portrait-image,
+  .landscape-image {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}

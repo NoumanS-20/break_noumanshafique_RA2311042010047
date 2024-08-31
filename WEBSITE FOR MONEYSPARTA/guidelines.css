@@ -1,0 +1,89 @@
+.guidelines-container {
+  background-color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.guidelines-content {
+  position: relative;
+  min-height: 1024px;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-wrapper {
+  position: relative;
+  fill: #e7ecff;
+  overflow: hidden;
+  min-height: 1024px;
+  width: 100%;
+  padding-top: 18px;
+}
+
+.navigation {
+  align-self: flex-end;
+  display: flex;
+  margin-right: 25px;
+  width: 417px;
+  max-width: 100%;
+  gap: 31px;
+  font-size: 14px;
+  color: #505f98;
+  line-height: 24px;
+}
+
+.nav-item {
+  font-feature-settings: "liga" off, "clig" off;
+  opacity: 0.8;
+}
+
+.nav-item-active {
+  color: #15014c;
+}
+
+.guidelines-title {
+  color: #000;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1;
+  align-self: flex-start;
+  margin: 159px 0 0 16px;
+}
+
+.guidelines-content {
+  border-radius: 2px;
+  background-color: #111b47;
+  margin-top: 11px;
+  width: 100%;
+  font-size: 24px;
+  color: #fff;
+  line-height: 26px;
+  opacity: 0.8;
+  padding: 7px 0 22px;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    margin-right: 10px;
+  }
+
+  .guidelines-title {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .guidelines-content {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+}

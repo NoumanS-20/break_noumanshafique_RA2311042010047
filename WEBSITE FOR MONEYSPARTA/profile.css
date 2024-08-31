@@ -1,0 +1,542 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  aspect-ratio: 1.166;
+  width: 100%;
+  align-items: start;
+  padding: 200px 72px 1px 18px;
+  font: 500 18px Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .dashboard-container {
+    padding: 100px 20px 0 0;
+  }
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  color: #1814f3;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .menu-item {
+    white-space: initial;
+  }
+}
+
+.active-indicator {
+  border-radius: 0 10px 10px 0;
+  background-color: #1814f3;
+  align-self: stretch;
+  width: 6px;
+  height: 60px;
+}
+
+.menu-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 25px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.menu-text {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.profile-item {
+  position: relative;
+  display: flex;
+  gap: 26px;
+  color: #b1b1b1;
+  margin: 22px 0 0 44px;
+}
+
+@media (max-width: 991px) {
+  .profile-item {
+    margin-left: 10px;
+  }
+}
+
+.profile-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 25px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.image-container {
+  aspect-ratio: 1;
+  width: 48px;
+  align-self: end;
+  margin-right: 30px;
+}
+
+.content-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 991px) {
+  .image-container {
+    margin-right: 10px;
+  }
+}
+.cards-title {
+  color: #343c6a;
+  align-self: start;
+  font: 600 22px Inter, sans-serif;
+}
+
+.credit-card-container {
+  display: flex;
+  gap: 40px 100px;
+  flex-wrap: wrap;
+}
+
+.credit-card-front {
+  align-self: flex-end;
+  display: flex;
+  margin-top: 24px;
+  flex-direction: column;
+  font-family: Lato, sans-serif;
+  flex: 1;
+}
+
+.card-info-wrapper {
+  display: flex;
+  margin-left: 26px;
+  width: 247px;
+  max-width: 100%;
+  gap: 40px 59px;
+  font-weight: 400;
+}
+
+.card-holder-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: #fff;
+  flex: 1;
+}
+
+.card-label {
+  align-self: flex-start;
+}
+
+.card-number {
+  margin-top: 5px;
+  font: 20px Inter, sans-serif;
+}
+
+.card-holder-label {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  align-self: flex-start;
+  margin-top: 29px;
+}
+
+.card-holder-name {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.dob-wrapper {
+  align-self: flex-end;
+  display: flex;
+  margin-top: 67px;
+  flex-direction: column;
+  flex: 1;
+}
+
+.dob-label {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+.dob-value {
+  color: #fff;
+  font-size: 15px;
+}
+
+.pan-number-wrapper {
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  margin-top: 29px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  padding: 7px 70px 22px 26px;
+}
+
+.pan-label {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.pan-value {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.credit-card-back {
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 4px 4px 60px -15px rgba(231, 228, 232, 0.8);
+  display: flex;
+  padding-top: 24px;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid #dfeaf2;
+}
+
+.card-back-info {
+  align-self: center;
+  display: flex;
+  width: 300px;
+  max-width: 100%;
+  gap: 20px;
+  font-family: Lato, sans-serif;
+  justify-content: space-between;
+}
+
+.balance-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: #718ebf;
+  font-weight: 400;
+}
+
+.balance-label {
+  align-self: flex-start;
+}
+
+.balance-value {
+  color: #000;
+  font-family: Inter, sans-serif;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.card-holder-back-label {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  margin-top: 28px;
+}
+
+.card-holder-back-name {
+  color: #343c6a;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.expiry-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-logo {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 35px;
+  align-self: flex-end;
+}
+
+.valid-thru {
+  color: #718ebf;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 31px;
+}
+
+.expiry-date {
+  color: #343c6a;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-back-footer {
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  margin-top: 29px;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px 32px;
+  border: 1px solid #dfeaf2;
+}
+
+.card-number-back {
+  color: #343c6a;
+  margin: auto 0;
+  font: 600 22px Lato, sans-serif;
+}
+
+.card-chip {
+  background-color: rgba(145, 153, 175, 0.5);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0 6px;
+}
+
+.chip-inner {
+  background-color: rgba(145, 153, 175, 0.5);
+  border-radius: 50%;
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 991px) {
+  .credit-card-container {
+    max-width: 100%;
+  }
+
+  .card-info-wrapper {
+    margin-left: 10px;
+  }
+
+  .card-holder-name {
+    margin-right: 8px;
+  }
+
+  .dob-wrapper {
+    margin-top: 40px;
+  }
+
+  .pan-number-wrapper,
+  .card-back-footer {
+    padding: 0 20px;
+  }
+
+  .card-holder-back-label {
+    margin-right: 5px;
+  }
+
+  .chip-inner {
+    margin-right: -14px;
+  }
+}
+.transaction-history {
+  color: rgba(0, 0, 0, 0.2);
+  align-self: start;
+  margin: 78px 0 0 11px;
+  font: 500 16px Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .transaction-history {
+    margin: 40px 0 0 10px;
+  }
+}
+    .progress-container {
+        display: flex;
+        margin-top: 8px;
+    }
+    .progress-bar {
+        border-radius: 10px 10px 0 0;
+        background-color: #1814f3;
+        width: 145px;
+        height: 3px;
+    }
+    .progress-track {
+        background-color: #ebeef2;
+        height: 1px;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    @media (max-width: 991px) {
+        .progress-container {
+            max-width: 100%;
+        }
+        .progress-track {
+            max-width: 100%;
+        }
+    }
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+    .transaction-history {
+      border-radius: 25px;
+      background-color: #fff;
+      box-shadow: 4px 4px 18px -2px rgba(231, 228, 232, 0.8);
+      z-index: 10;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      color: #232323;
+      margin: 25px 0 -33px;
+      padding: 26px 30px;
+      font: 400 16px Inter, sans-serif;
+    }
+    
+    .transaction-header {
+      display: flex;
+      width: 100%;
+      max-width: 1010px;
+      gap: 40px 87px;
+      color: #718ebf;
+      font-weight: 500;
+    }
+    
+    .transaction-description {
+      flex-grow: 1;
+    }
+    
+    .transaction-details {
+      display: flex;
+      gap: 40px 43px;
+    }
+    
+    .transaction-amount-receipt {
+      display: flex;
+      gap: 40px 49px;
+      white-space: nowrap;
+    }
+    
+    .divider {
+      background-color: #e6eff5;
+      height: 1px;
+      margin-top: 11px;
+    }
+    
+    .transaction-item {
+      display: flex;
+      margin-top: 15px;
+      gap: 31px;
+      flex-wrap: wrap;
+    }
+    
+    .transaction-icon-name {
+      display: flex;
+      gap: 14px;
+      margin: auto 0;
+    }
+    
+    .transaction-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 30px;
+    }
+    
+    .transaction-name {
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    
+    .transaction-info {
+      display: flex;
+      align-items: center;
+      gap: 40px 58px;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    
+    .transaction-id,
+    .transaction-type,
+    .transaction-card,
+    .transaction-date {
+      align-self: stretch;
+      margin: auto 0;
+    }
+    
+    .transaction-amount {
+      font-weight: 500;
+      align-self: stretch;
+      margin: auto 0;
+    }
+    
+    .amount-negative {
+      color: #fe5c73;
+    }
+    
+    .amount-positive {
+      color: #16dbaa;
+    }
+    
+    .download-button {
+      border-radius: 50px;
+      align-self: stretch;
+      font-size: 15px;
+      color: #123288;
+      white-space: nowrap;
+      padding: 9px 15px;
+      border: 1px solid #123288;
+    }
+    
+    .download-button-alt {
+      color: #1814f3;
+      border-color: #1814f3;
+    }
+    
+    @media (max-width: 991px) {
+      .transaction-history {
+        max-width: 100%;
+        margin-bottom: 10px;
+        padding: 0 20px;
+      }
+    
+      .transaction-header,
+      .transaction-info,
+      .divider {
+        max-width: 100%;
+      }
+    
+      .transaction-amount-receipt,
+      .download-button,
+      .download-button-alt {
+        white-space: initial;
+      }
+    }
