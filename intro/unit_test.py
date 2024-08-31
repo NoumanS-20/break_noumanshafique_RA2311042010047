@@ -11,7 +11,7 @@ class FlaskAppTestCase(unittest.TestCase):
     def test_login(self):
         with self.app as client:
             # Perform a POST request to the login endpoint with valid credentials
-            response = client.post('/pythonlogin/', data=dict(username='testuser', password='testpassword'))
+            response = client.post('/pythonlogin/', data=dict(username='root', password='adisalwathba'))
             self.assertEqual(response.status_code, 302)  # expect a redirect response
 
             # Ensure session variables are set correctly
